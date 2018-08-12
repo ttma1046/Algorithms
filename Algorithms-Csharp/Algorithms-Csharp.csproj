@@ -45,10 +45,13 @@
   <ItemGroup>
     <Compile Include="array\ArrayLeftRotation.cs" />
     <Compile Include="array\ResizableArray.cs" />
+    <Compile Include="Graph\DFS\LeafSimilarTrees.cs" />
+    <Compile Include="Graph\DFS\NumIsLands.cs" />
     <Compile Include="hashtable\Hashtable.cs" />
     <Compile Include="hashtable\RansomNote.cs" />
     <Compile Include="Heap\MinHeap.cs" />
     <Compile Include="linkedlist\CycleLinkedList.cs" />
+    <Compile Include="linkedlist\LinkedListGeneric.cs" />
     <Compile Include="linkedlist\MyLinkedList.cs" />
     <Compile Include="linkedlist\SolutionPlusOneLinkedList.cs" />
     <Compile Include="Program.cs" />
@@ -66,7 +69,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Graph\BFS\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

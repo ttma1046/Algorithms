@@ -10,13 +10,12 @@ namespace Algorithms_Csharp.hashtable
     {
         LinkedList<LinkedListItem>[] data;
 
-        
         bool put(String key, Person value)
         {
-            int hashcode = getHashCode(key);
-            int index = convertToIndex(hashCode);
-            LinkedList<LinkedListItem> list = data[index];
-            list.AddLast(new LinkedListItem { Key = key, Person = value});
+            // int hashcode = getHashCode(key);
+            // int index = convertToIndex(hashCode);
+            // LinkedList<LinkedListItem> list = data[index];
+            // list.AddLast(new LinkedListItem { Key = key, Person = value});
             return true;
         }
         

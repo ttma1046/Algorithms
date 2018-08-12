@@ -32,7 +32,7 @@ namespace Algorithms_Csharp.Heap
         {
             if (size == capacity)
             {
-                items = Arrays.copyOf(items, capacity * 2);
+                // items = Arrays.copyOf(items, capacity * 2);
                 capacity *= 2;
             }
         }

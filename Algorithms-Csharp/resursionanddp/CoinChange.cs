@@ -21,9 +21,11 @@ namespace Algorithms_Csharp.resursionanddp
             return ways;
         }
 
+        /*
         static void Main(string[] args)
         {
             MakeChange(new int[] { 25, 10, 5, 1 }, 27, 0);
         }
+        */
     }
 }

@@ -28,7 +28,7 @@ namespace Algorithms_Csharp.stringDemo
             int[] charCounts = new int[NUMBER_LETTERS];
             for (int i = 0; i < s.Length; i++)
             {
-                char c = s.CharAt(i);
+                char c = s[i];
                 int offset = (int)'a';
                 int code = c - offset;
                 charCounts[code]++;
