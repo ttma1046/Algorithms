@@ -38,6 +38,27 @@
             head = newHead;
         }
 
+        public void deleteWithValue(int data)
+        {
+            if (head == null) return;
+            if (head.data == data)
+            {
+                head = head.next;
+                return;
+            }
+
+            Node current = head;
+            while (current.next != null)
+            {
+                if (current.next.data == data)
+                {
+                    current.next = current.next.next;
+                    return;
+                }
+                current = current.next;
+            }
+        }
+
         public void insertAfterHead(int data)
         {
             if (head == null)
@@ -69,27 +90,6 @@
             return false;  
         }
 
-        public void deleteWithValue(int data)
-        {
-            if (head == null) return;
-            if (head.data == data)
-            {
-                head = head.next;
-                return;
-            }
-
-            Node current = head;
-            while (current.next != null)
-            {
-                if (current.next.data == data)
-                {
-                    current.next = current.next.next;
-                    return;
-                }
-                current = current.next;
-            }
-        }
-
         public void traverse()
         {
             Node current = head;
@@ -105,7 +105,6 @@
             if (head != null)
             {
                 traverseReversal(head);
-                
             }
         }
 
@@ -148,7 +147,7 @@
             return nodeResult;
         }
                     
-        public static void Main(string[] args)
+        public static void main(string[] args)
         {
             MyLinkedList list = new MyLinkedList();
             list.head = new Node(1);

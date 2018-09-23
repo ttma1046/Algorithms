@@ -52,7 +52,7 @@ namespace Algorithms_Csharp.Graph.DFS
             }
         }
 
-        public static void main(string[] args)
+        public static void test(string[] args)
         {
             var root1 = new TreeNode(3) {
                 left = new TreeNode(5) {

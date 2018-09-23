@@ -55,7 +55,7 @@ namespace Algorithms_Csharp.Graph.DFS
             dfs(grid, i, j - 1);
         }
 
-        public static void main(string[] args)
+        public static void test(string[] args)
         {
             var grid = new char[,] { { '1', '1', '1', '1', '0' }, { '1', '1', '0', '1', '0' }, { '1', '1', '0', '0', '0' }, { '0', '0', '0', '0', '0'} };
             Console.WriteLine(new NumIsLands().NumIslands(grid));
